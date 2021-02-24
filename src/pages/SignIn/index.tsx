@@ -13,9 +13,9 @@ const SignIn : React.FC = () => {
     <Container >
        <Image source={logoImg} />
        <Title>Faça seu logon</Title>
-       <Input />
-       <Input />
-       <Button>Entrar</Button>
+       <Input name="email" icon="mail" placeholder="E-mail" />
+       <Input name="password" icon="password" placeholder="Senha"/>
+       <Button onPress={() => {console.log('deu')}}>Entrar</Button>
     </Container>
   );
 }
