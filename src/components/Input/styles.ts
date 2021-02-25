@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 //import {RectInput} from 'react-native-gesture-handler';
+import FeatherIcon from 'react-native-vector-icons/Feather';
 
 export const Container = styled.View`
   width: 100%;
@@ -9,6 +10,9 @@ export const Container = styled.View`
   border-radius: 10px;
   margin-bottom: 8px;
 
+  flex-direction: row;
+  align-items: center;
+
 
 `;
 
@@ -17,5 +21,10 @@ export const TextInput = styled.TextInput`
   color: #fff;
   font-size: 16px;
   font-family: 'RobotoSlab-Regular';
+
+`;
+
+export const Icon = styled(FeatherIcon)`
+  margin-right: 16px;
 
 `;
